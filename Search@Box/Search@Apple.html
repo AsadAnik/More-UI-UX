@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SearchBar | Apple</title>
+	<script type="text/javascript" src="fontawesome-web/js/all.js"></script>
+</head>
+
+<style type="text/css">/*The CSS stylesheet*/
+	@import "fontawesome-web/css/all.css";
+
+ /*Main Stylesheet CSS*/
+ 	body{
+ 		background: #F3904F;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	}	
+
+ 	#inputArea{
+ 		position: absolute;
+ 		left: 50%;
+ 		top: 50%;
+ 		transform: translate(-50%, -50%);
+ 		background: #fff;
+ 		height: 45px;
+ 	}
+ 	#inputArea input[type="search"]{
+ 		font-size: 18px;
+ 		font-family: sans-serif;
+ 		outline: none;
+ 		border: none;
+ 		width: 0;
+ 		margin-top: 12px;
+ 		float: left;
+ 		padding: 0;
+ 		transition: 0.5s;
+ 		letter-spacing: 0.8px;
+ 		word-spacing: 2px;
+ 	}
+ 	#inputArea a{
+ 		background: #F3904F;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 		color: white;
+ 		height: 45px;
+ 		width: 45px;
+ 		font-size: 20px;
+ 		float: right;
+ 		justify-content: center;
+ 		display: flex;
+ 		align-items: center; 
+ 	}
+
+ /*Animations for Extra*/	
+ 	#inputArea:hover > input[type="search"]{
+ 		width: 230px;
+ 		padding: 0 10px;
+ 	}
+ 	#inputArea:hover > a{
+ 		background: white;
+ 		color: black;
+ 	}
+
+</style><!--END of the stylesheet--->
+
+<body><!--HTML body area-->
+
+	<div id="inputArea">
+	    <input type="search" name="" placeholder="Search Now">
+
+	    <a href="#">
+	    	<i class="fas fa-search"></i>
+	    </a>
+	</div>
+</body><!--END of this body-->
+</html>

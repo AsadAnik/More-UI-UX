@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SearchBar | Windows</title>
+	<link rel="stylesheet" type="text/css" href="fontawesome-web/css/all.css">
+	<script type="text/javascript" src="fontawesome-web/js/all.js"></script>
+</head>
+
+<style type="text/css">/*The CSS stylesheet*/
+	body{
+		background: #00416A;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+ /*Search box*/
+ 	.searchArea{
+ 		position: absolute;
+ 		left: 50%;
+ 		top: 50%;
+ 		transform: translate(-50%, -50%);
+ 		background: #000046;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 		height: 40px;
+ 		padding: 10px;
+ 		border-radius: 10px;
+ 	}	
+ 	.search-text{
+ 		background: none;
+ 		outline: none;
+ 		border: none;
+ 		font-size: 18px;
+ 		color: #fff;
+ 		line-height: 40px;
+ 		float: left;
+ 		transition: 0.5s;
+ 		width: 0;
+ 	}
+ 	.search-text::placeholder{
+ 		color: lightblue;
+ 	}
+
+ 	.search-btn{
+ 		height: 40px;
+ 		width: 40px;
+ 		float: right;
+ 		display: flex;
+ 		justify-content: center;
+ 		align-items: center;
+ 		border-radius: 10px;
+ 		color: white;
+ 		font-size: 20px;
+ 	}
+
+ /*Animation One*/
+ 	.searchArea:hover > .search-text{
+ 		width: 240px;
+ 	}
+ 	.searchArea:hover > .search-btn{
+ 		background: white;
+ 		color: blue;
+ 	}
+</style><!--END of the CSS-->
+
+
+<body>
+ <!--Search area-->	
+	<div class="searchArea">
+	 <!--Search area input box-->	
+		<input type="search" class="search-text" placeholder="Search Items">
+	<!--The Search Button-->	
+		<a href="#" class="search-btn">
+			<i class="fas fa-search"></i>
+		</a>
+	</div><!--END of the search area-->
+</body><!--END of the search div-->
+</html>

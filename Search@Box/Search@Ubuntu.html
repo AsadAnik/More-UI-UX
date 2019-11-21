@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SearchBar | Ubuntu</title>
+ <!--The Font-Awesome links-->	
+	<link rel="stylesheet" type="text/css" href="fontawesome-web/css/all.css">
+	<script type="text/javascript" src="fontawesome-web/js/all.js"></script>
+</head>
+
+<style type="text/css">/*The Stylesheet inner here*/
+	body{
+		background: #f12711;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to left, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to left, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+ /*search box area*/	
+	.searchBox{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #bdc3c7;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		height: 40px;
+		border-radius: 40px;
+		padding: 10px;
+	}
+	.searchBox:hover > .search-bar{
+		width: 240px;
+		padding: 0 6px;
+	}
+
+ /*Search button area*/
+	.search-btn{
+		color: orange;
+		float: right;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: black;
+		display: flex;
+		justify-content: center;
+		align-items: center; 
+	}
+	.search-btn:hover{
+		transform: rotate(360deg);
+ 		transition: 1s;
+	}
+
+ /*Search bar area*/	
+	.search-bar{
+		background: none;
+		border: none;
+		outline: none;
+		float: left;
+		padding: 0;
+		color: white;
+		font-size: 16px;
+		transition: 0.4s;
+		line-height: 40px;
+		width: 0;
+	}
+	.search-bar::placeholder{
+		color: orange;
+	}
+</style><!--END of the CSS stylesheet-->
+
+
+<body><!--The HTML body area inner here-->
+
+ <!--The Search Box model-->
+	<div class="searchBox">
+		<input type="search" class="search-bar" name="" placeholder="search here">
+		<a class="search-btn" href="#">
+			<i class="fas fa-search"></i>
+		</a>
+	</div>
+
+</body><!--END of the HTML bosdy area-->
+</html>
