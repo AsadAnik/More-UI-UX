@@ -1,0 +1,67 @@
+ /******DEFAULT*****/
+  div, section, header, footer, aside, article{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  ul, li, a, h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    overflow: hidden;
+  }
+  .container{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /*---------HEADER---------*/    
+   header{
+      width: 100%;
+      background: url('../assets/img/1.jpg') no-repeat center center fixed;
+      opacity: .8;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+      height: 500px;
+      clip-path: polygon(0% 0%, 100% 6%, 100% 50%, 57% 98%, 0% 100%);
+   }
+
+  /*---------CONTENTS---------*/    
+    section{
+      width: 100%;
+      display: flex;
+      background: lightgray;
+      padding: 10px 0;
+    }
+
+    section aside{
+      margin-left: 5px;
+      margin-right: 5px;
+        background: white;
+        padding: 20px;
+        height: 500px;
+    }
+
+    #left_aside{
+      width: 200px;
+    }
+    #center_aside{
+      width: 600px;
+    }
+    #right_aside{
+      width: 200px;
+    }
+
+  /*---------FOOTER---------*/    
+    footer{
+      display: grid;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      background: #000;
+      color: #fff;
+    }
+    footer a{
+      color: #000;
+    }
