@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practicing The HTML</title>
+</head>
+
+<style type="text/css">
+	/*The CSS for styling*/
+	#dragging_place{
+		padding: 20px;
+		border: 2px solid;
+		height: 200px;
+		width: 200px;
+	}
+	#dragging_place span{
+		position: absolute;
+		text-align: center;
+		margin-top: 9%;
+		color: gray;
+		text-transform: uppercase;
+		font-size: 13px;
+
+	}
+</style>
+
+
+<body>
+	<!--HTML-->
+		<h4>Drag & Drop API of HTML</h4>
+
+	 <!--The Draggable Place HTML BOX-->		
+		<div id="dragging_place" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+			<span>Drag and Drop Your Image</span>
+		</div>
+
+	 <!--Dragging File(image file) must Need one id like (dragging_element)-->
+		<img id="dragging_element" src="https://images.vexels.com/media/users/3/151220/isolated/preview/4911cfa40001168dc25cf4ec5c9766e5-simple-flower-hippie-doodle-by-vexels.png"  draggable="true" ondragstart="drag(event)" width="200" height="200">
+
+
+	<script type="text/javascript">
+		 ///Allow Drop Function from Draggable Place...
+			function allowDrop(e){
+				e.preventDefault();
+			}
+
+		 ///Drag Function for Dragging File element...
+			function drag(e){
+				e.dataTransfer.setData("text", e.target.id);
+			}	
+
+		 ///Drop Function from Draggable Place...
+			function drop(e){
+				e.preventDefault();
+				var data = e.dataTransfer.getData("text");
+				e.target.appendChild(document.getElementById(data));
+			}
+	</script>
+</body>
+</html>
